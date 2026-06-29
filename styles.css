@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 28px 0 18px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 18px;
+  font-size: 1rem;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.site-nav a:hover {
+  opacity: 1;
+}
+
+.main-content {
+  padding: 36px 0 80px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.content-card {
+  padding: 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 48px rgba(20, 20, 20, 0.06);
+  margin-top: 24px;
+}
+
+.search-box {
+  margin-top: 24px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.tags-grid span {
+  padding: 10px 14px;
+  background: #f3f3f3;
+  border-radius: 999px;
+  color: #5c5c5c;
+  font-size: 0.95rem;
+}
+
+.post-list {
+  display: grid;
+  gap: 24px;
+}
+
+.post-card {
+  padding: 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 48px rgba(20, 20, 20, 0.06);
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.post-meta h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.post-meta span {
+  color: #757575;
+  white-space: nowrap;
+}
+
+.post-card p {
+  color: #4d4d4d;
+  margin-bottom: 18px;
+}
+
+.post-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.post-tags span {
+  display: inline-flex;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  color: #5c5c5c;
+  background: #f3f3f3;
+  border-radius: 999px;
+}
